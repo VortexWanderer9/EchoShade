@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="login-container">
+        <div id="login-title"></div>
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="login-button">Login</button>
+            <p id="action-message" class="error-message"></p>
+            <div class="form-footer">
+                <p>[ WiperZero v1.0 | Secure Node Access ]</p>
+            </div>
+        </form>
+    </div>
+<script src="script/login.js"></script>
 </body>
 </html>
