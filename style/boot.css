@@ -3,4 +3,16 @@ body{
     background: linear-gradient(to right, #000000, #222222);
     color: #fff;
     font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+.boot-text{
+    font-size: .8rem;
+    line-height: 1.6;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+.boot-container h1{
+    font-size: 1.2rem;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
 }
