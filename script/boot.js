@@ -39,3 +39,5 @@ function typeBoot() {
 }
 }
 typeBoot()
+
+const nav = document.querySelector('.nav');

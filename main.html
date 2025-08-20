@@ -10,13 +10,25 @@
     <div class="back-ground"></div>
     <nav>
         <div class="nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="main.html" class="nav-link">Main</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Daily Usable Commands</a>
+            <a href="main.html" class="nav-link">Remote Commands</a>
+            <a href="about.html" class="nav-link">Basic Commands</a>
+            </div>
+            <div class="small">
+                <svg width="199px" height="199px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M7 12H17M9 18H15" stroke="#000000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
     </div>
     </nav>
-    
-
+    <script>
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () =>{
+            if(window.scrollY < 60){
+                nav.classList.remove('scrolled');
+            }else{
+                nav.classList.add('scrolled');
+            }
+        })
+    </script>
 </body>
 </html>
