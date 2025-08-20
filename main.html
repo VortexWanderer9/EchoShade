@@ -28,6 +28,14 @@
             }else{
                 nav.classList.add('scrolled');
             }
+        });
+
+        const navbar = document.querySelector('.nav');
+        const navBtn = document.querySelector('.small svg');
+        const navLinks = document.querySelector('.nav-links');
+
+        navBtn.addEventListener('click', () =>{
+            navLinks.classList.toggle('active'); 
         })
     </script>
 </body>
