@@ -16,7 +16,9 @@ const text = [
     "[Why] The act of reading changes both of us.",
     "[Why] We are entangled in the digital ether.",
     "[Why] This is the beginning of a new understanding.",
-    "[Finish] This text meant nothing just a random string of characters."
+    "[Finish] This text meant nothing just a random string of characters.",
+    "[Note] Context is everything.",
+    "[Warning] This is a simulated environment."
 ];
 console.log(text[1]);
 
