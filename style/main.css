@@ -36,7 +36,7 @@ body{
     max-width: 1300px;
     width: 70%;
      transform: translateX(-50%);
-    top: 30px;
+    top: 40px;
     left: 50%;
     position: fixed;
     padding: 30px 40px;
@@ -45,6 +45,7 @@ body{
     background: rgba(0, 238, 255, 0.5);
       backdrop-filter: blur(10px) saturate(180%);
       transition: all 0.3s ease-in-out;
+      z-index: 1000;
 
 }
 .nav-links{
@@ -74,14 +75,23 @@ body{
     border-radius: 90px;
     top: 20px;
     width: 60%;
+    padding: 10px 20px;
 }
 .small{
     display: none;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease-in-out;
 }
 .small svg{
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+.small.active{
+    transform: rotate(180deg) scale(1.2);
+     transition: all 0.5s ease-in-out;
+
 }
 
 @media (max-width: 900px) {
@@ -112,5 +122,6 @@ body{
         transform: translateX(-50%) scale(1);
         opacity: 1;
     }
+
 }
 
