@@ -1,0 +1,16 @@
+{
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.autoSave": "onWindowChange",
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/dist": true
+    },
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false,
+    "eslint.alwaysShowRuleFailuresAsWarnings": true,
+    "liveServer.settings.host": "0.0.0.0",
+    "liveServer.settings.port": 5500
+}
