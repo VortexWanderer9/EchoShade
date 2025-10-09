@@ -1,11 +1,11 @@
 .info-container{
-    height: 80vh;
+    /* height: 80vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 10px;
-    margin-top: 100px;
+    padding: 20px;
+    gap: 20px;
 }
 
 .heading-text{
@@ -13,6 +13,7 @@
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0 0 10px rgba(42, 65, 67, 0.7);
+    color: white;
 }
 
 .info-text{

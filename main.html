@@ -11,11 +11,15 @@
     <div class="back-ground"></div>
     <nav>
         <div class="nav">
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Daily Usable Commands</a>
-            <a href="main.html" class="nav-link">Remote Commands</a>
-            <a href="about.html" class="nav-link">Basic Commands</a>
+            <div class="logo">
+                EchoShade
             </div>
+           <div class="links nav-links">
+            <a href="#">Home</a>
+             <a href="#">About</a>
+              <a href="#">Contract</a>
+                <a href="#">Official Documentation</a>
+           </div>
             <div class="small">
                 <svg width="199px" height="199px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M7 12H17M9 18H15" stroke="#000000" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
             </div>
@@ -30,8 +34,6 @@
                Feel free to explore the commands and use them as needed.
               For more information, visit the <br><a target="_blank" href="https://git-scm.com/doc">official Git documentation </a>.</p>
         </div>
-
-       
         </div>
          <div class="scroll">
             <div class="text">Scroll down</div>
@@ -46,13 +48,6 @@
         const navLinks = document.querySelector('.nav-links');
         const nav = document.querySelector('.nav');
         const sBth = document.querySelector('.text')
-        window.addEventListener('scroll', () =>{
-            if(window.scrollY < 60){
-                nav.classList.remove('scrolled');
-            }else{
-                nav.classList.add('scrolled');
-            }
-        });
         navBtn.addEventListener('click', () =>{
             navLinks.classList.toggle('active');
             navBt.classList.toggle('active');

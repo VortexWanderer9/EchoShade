@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: black;
-    height: 200vh;
+    background-color: black;
 }
 
 .back-ground{
@@ -33,49 +32,31 @@ body{
     100%{background-position: 100px 100px;}
 }
 .nav{
-    max-width: 1300px;
-    width: 70%;
-     transform: translateX(-50%);
-    top: 40px;
-    left: 50%;
-    position: fixed;
+   width: 100%;
     padding: 30px 40px;
     border: 1px solid rgba(0, 238, 255, 0.5);
-    border-radius: 30px;
     background: rgba(0, 238, 255, 0.5);
       backdrop-filter: blur(10px) saturate(180%);
       transition: all 0.3s ease-in-out;
       z-index: 1000;
-
+      display: flex;
+      justify-content: space-between;
 }
-.nav-links{
+.logo{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.links{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
-.nav a{
+.links a{
     text-decoration: none;
-    color: #00ffff;
-    font-size: 1.3rem;
-    font-family: 'Belgrano', sans-serif;
-    border: 1px solid rgba(0, 238, 255, 0.5);
-    border-radius: 20px;
-    padding: 10px 20px;
-
-}
-
-.nav a:hover{
-    background: rgba(0, 238, 255, 0.7);
-    color: #000;
-    transition: all 0.3s ease-in-out;
-}
-
-.nav.scrolled{
-    background: rgba(0, 238, 255, 0.5);
-    border-radius: 90px;
-    top: 20px;
-    width: 60%;
-    padding: 10px 20px;
+    color: white;
 }
 .small{
     display: none;
@@ -97,22 +78,24 @@ body{
 @media (max-width: 900px) {
     .nav-links {
         position: fixed;    
-        top: -600px;
+        top: -500px;
         left: 50%;
         transform: translateX(-50%) scale(0.9);
-        width: 90%;
-        background: rgba(255,255,255,0.2);
+        width: 100%;
+        background-color: aqua;
         border: 1px solid rgba(255,255,255,0.2);
-        border-radius: 25px;
-        flex-direction: column;
-        align-items: start;
         gap: 30px;
-        padding: 70px 15px;
         box-shadow: 0 12px 40px rgba(0,0,0,0.6);
         transition: top 0.5s ease, transform 0.4s ease, opacity 0.4s ease;
         z-index: 10009;
         opacity: 0;
-
+        font-size: .9rem;
+        padding: .5rem;
+        color: black;
+    }
+    .nav-links a{
+        color: black;
+        font-weight: 600;
     }
     .small {
         display: block;
