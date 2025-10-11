@@ -127,3 +127,4 @@ Maintainer checklist (before releasing)
 - Ensure monitoring and alert rules are in place
 
 This README is intended as a production-grade template — adapt sections to reflect the actual stack, conventions, and operational practices used by the EchoShade project.
+# this project is a template and should be customized to fit your specific use case and technology choices.
