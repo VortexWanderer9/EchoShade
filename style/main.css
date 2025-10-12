@@ -4,7 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --accent: #38bdf8;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+  }
 
 .back-ground{
     position: fixed;
@@ -111,8 +117,8 @@
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.281);
     padding: 20px;
+    flex-direction: column;
 }
 .container-cmd h1{
     font-weight: 600;
@@ -152,3 +158,121 @@
         text-align: center;
     }
 }
+.grid-cmds {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: 2% auto;
+  }
+
+  /* 💎 Card Styles */
+  .grid {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.3rem 1.4rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .grid:hover .command{
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  }
+
+
+
+  .task {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.3rem;
+    position: relative;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .action {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    z-index: 1;
+  }
+
+  /* 💻 Command Box */
+  .command {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    font-family: "Fira Code", monospace;
+    color: var(--accent);
+    font-size: 0.9rem;
+    /* white-space: pre-wrap; */
+    word-break: break-word;
+    transition: background 0.3s ease;
+    z-index: 2;
+      transition: all 0.3s ease;
+  }
+
+
+  /* ✨ Smooth Appear Animation */
+  .grid {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  .grid:nth-child(n) {
+    animation-delay: calc(0.05s * var(--i, 1));
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 📱 Responsive Fixes */
+  @media (max-width: 600px) {
+  
+    .command {
+      font-size: 0.85rem;
+    }
+  }
+
+
+   .important-note {
+    background: linear-gradient(135deg, #f8cdda, #1d2b64); /* gradient background */
+    color: white; /* text color */
+    font-family: 'Arial', sans-serif; /* clean font */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-left: 6px solid #ff6f61; /* accent border */
+    border-radius: 12px; /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* subtle shadow */
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+       transition: transform 0.3s ease;
+       cursor: pointer;
+  }
+
+  .important-note::before {
+    content: "⚠️ "; /* icon for emphasis */
+  }
+
+  .important-note:hover {
+    transform: scale(1.05);
+  }
